@@ -29,7 +29,7 @@ class Client extends JFrame {
     public Client() {
         try {
             System.out.println("Sending request to Server");
-            socket = new Socket("127.0.0.1", 7777);
+            socket = new Socket("127.0.0.1", 7778);
             System.out.println("Connection done..");
 
             br = new BufferedReader(new InputStreamReader(socket.getInputStream()));
@@ -75,7 +75,7 @@ class Client extends JFrame {
 
     private void createGUI() {
         // GUI
-        this.setTitle("CLient Messanger[END");
+        this.setTitle("CLient Messanger[END]");
         this.setSize(600, 700);
         this.setLocationRelativeTo(null);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
